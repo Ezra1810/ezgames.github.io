@@ -1,0 +1,256 @@
+    body {
+        font-family: 'Courier New', monospace;
+        background: linear-gradient(to bottom, #1e3a8a, #1e40af);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+    }
+
+    .container {
+        max-width: 900px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-screen, .waiting-screen, .game-screen, .gameover-screen {
+        background: white;
+        border-radius: 12px;
+        padding: 40px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 48px;
+        color: #1e40af;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        color: #666;
+        margin-bottom: 40px;
+    }
+
+    button {
+        background: #16a34a;
+        color: white;
+        border: none;
+        padding: 20px 40px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Courier New', monospace;
+        transition: all 0.3s;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    button:hover {
+        background: #15803d;
+        transform: translateY(-2px);
+    }
+
+    button:disabled {
+        background: #9ca3af;
+        cursor: not-allowed;
+        transform: none;
+    }
+
+    .scoreboard {
+        background: #1f2937;
+        color: white;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .score-section {
+        text-align: center;
+    }
+
+    .team-label {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .score {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .time-section {
+        text-align: center;
+    }
+
+    .quarter {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .time {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .field-container {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    #field {
+        width: 100%;
+        border-radius: 8px;
+        display: block;
+    }
+
+    .game-info {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .possession {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .down-distance {
+        color: #666;
+        font-size: 16px;
+    }
+
+    .play-result {
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .play-result.success {
+        background: #16a34a;
+        color: white;
+    }
+
+    .play-result.failure {
+        background: #dc2626;
+        color: white;
+    }
+
+    .plays-container {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+    }
+
+    .plays-container h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .plays-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .play-button {
+        background: #2563eb;
+        padding: 30px 20px;
+    }
+
+    .play-button:hover {
+        background: #1d4ed8;
+    }
+
+    .play-name {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .play-stats {
+        font-size: 14px;
+        opacity: 0.9;
+    }
+
+    .waiting-message {
+        color: #666;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .opponent-turn {
+        background: white;
+        border-radius: 12px;
+        padding: 40px;
+    }
+
+    .opponent-turn h3 {
+        color: #666;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .spinner {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #2563eb;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .final-score {
+        font-size: 72px;
+        font-weight: bold;
+        margin: 30px 0;
+    }
+
+    .result-message {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .player-info {
+        background: #f3f4f6;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ready-status {
+        font-weight: bold;
+        color: #16a34a;
+    }
+
+    .not-ready {
+        color: #9ca3af;
+    }
+</style>
